@@ -80,7 +80,7 @@
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    /* align-items: center; */
     justify-content: space-between;
     width: 261px;
     height: 24px; 
@@ -112,6 +112,23 @@
     font-weight: 800;
 }
 
+.nav-link {
+    display: block;
+    height: 45px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.nav-link:hover::after {
+    content: "";
+    display: block;
+    background-color: var(--link-color-hover);
+    border-radius: 10px;
+    height: 4px;
+    margin-top: 20px;
+    transition-timing-function: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .studio-item {
     box-sizing: border-box;
     display: flex;
@@ -136,6 +153,7 @@
 .nav-bar a:hover,
 .nav-bar a:focus {
     color: #404BBF;
+    transition-timing-function: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*  Contact Section ( email, phone ) */
@@ -182,6 +200,7 @@
 .contact-phone:hover,
 .contact-phone:focus {
     color: #4D5AE5;
+    transition-timing-function: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Hero Image Section */
@@ -237,6 +256,7 @@
 .button:focus {
     background-color: #404BBF;
     color: #ffffff;
+    transition-timing-function: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Features Global Section */
@@ -409,6 +429,7 @@ p {
 
 .icon-bg:hover {
     background-color: #404BBF;
+    transition-timing-function: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-icons {
@@ -456,6 +477,7 @@ p {
    /* background-color: #4D5AE5; */
    border-radius: 2px;
    border-color: #404BBF;
+   transition-timing-function: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customer-icon svg {
@@ -469,6 +491,7 @@ p {
 
 .customer-icon svg:hover {
     color: var(--link-color-hover);
+    transition-timing-function: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers-title {
@@ -566,4 +589,5 @@ p {
 
 .icon-bg:hover {
     background-color: #404BBF;
+    transition-timing-function: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }

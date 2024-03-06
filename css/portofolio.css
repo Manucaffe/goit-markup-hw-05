@@ -80,7 +80,7 @@
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    /* align-items: center; */
     justify-content: space-between;
     width: 261px;
     height: 24px;
@@ -112,31 +112,28 @@
     font-weight: 800;
 }
 
-.studio-item {
-    box-sizing: border-box;
-    display: flex;
-    width: 48px;
-    height: 24px;
+.nav-link {
+    display: block;
+    height: 45px;
+    padding-left: 20px;
+    position: relative;
 }
 
-.portfolio-item {
-    box-sizing: border-box;
-    display: flex;
-    width: 66px;
-    height: 24px;
-}
-
-.contacts-item {
-    box-sizing: border-box;
-    display: flex;
-    width: 67px;
-    height: 24px;
+.nav-link:hover::after {
+    content: "";
+    display: block;
+    background-color: var(--link-color-hover);
+    border-radius: 10px;
+    height: 4px;
+    margin-top: 20px;
+    transition-timing-function: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-bar a:active,
 .nav-bar a:hover,
 .nav-bar a:focus {
     color: #404BBF;
+    transition-timing-function: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*  Contact Section ( email, phone ) */
@@ -183,6 +180,7 @@
 .contact-phone:hover,
 .contact-phone:focus {
     color: #4D5AE5;
+    transition-timing-function: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Hero Tab Section */
@@ -221,6 +219,7 @@
 .filter-button:hover {
     background-color: var(--link-color-hover);
     color: #ffffff;
+    transition-timing-function: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Portofolio Cards Section */
@@ -231,18 +230,13 @@
 }
   
 .portofolio-container {
+    box-sizing: border-box;
     max-width: 1200px;
     display: flex;
     justify-content: center;
     margin: 0 auto;
     flex-wrap: wrap;
     gap: 24px;
-}
-
-.portofolio-container,
-.portofolio-card {
-    display: flex;
-    justify-content: center;
 }
 
 .portofolio-card {
@@ -259,8 +253,8 @@
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
         0 1px 1px 0 rgba(46, 47, 66, 0.16),
         0 1px 6px 0 rgba(46, 47, 66, 0.08);
+        transition-timing-function: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 
 .card-content {
     width: 360px;
@@ -282,6 +276,10 @@
     padding-left: 16px;
 }
 
+.image-bg {
+    display: block;
+    position: relative;
+}
 
 /*  Footer Container */
 
@@ -374,6 +372,7 @@
 
 .icon-bg:hover {
     background-color: #404BBF;
+    transition-timing-function: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-icons {
     color: var(--cloud)
