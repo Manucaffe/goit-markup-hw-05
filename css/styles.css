@@ -89,7 +89,7 @@
     font-weight: 500;
 }
 
-/* Top Line Navigation Menu */
+/* Top Navigation Menu */
 
 .logo {
     box-sizing: border-box;
@@ -119,6 +119,21 @@
     position: relative;
 }
 
+.active-page::after {
+        content: "";
+        display: block;
+        /* position: absolute; */
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        border-radius: 2px;
+        margin-top: 20px;
+        background-color: var(--link-color-hover);
+}
+
+/* trecere hover pe fiecare meniu */
+/* 
 .nav-link:hover::after {
     content: "";
     display: block;
@@ -127,7 +142,7 @@
     height: 4px;
     margin-top: 20px;
     transition-timing-function: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 
 .studio-item {
     box-sizing: border-box;
