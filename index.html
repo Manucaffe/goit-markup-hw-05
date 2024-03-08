@@ -49,13 +49,22 @@
                 </div>    
             </div>    
         </header>
+
+        <!-- Modal section -->
+        
+        <div class="modal is-hidden" data-modal>
+            <div class="modal-content">
+                <button class="close-btn" data-modal-close>&times;</button>
+                <p class="continut">Aici va fi continutul temei #6</p>
+            </div>
+        </div>
         
         <!-- Hero Image Section -->
 
         <section class="hero-background">
              <div class="hero-container">
                <h1>Effective Solutions for Your Business</h1>
-               <button class="button">Order service</button>
+               <button class="button" data-modal-open>Order service</button>
              </div>
         </section>
 
@@ -424,5 +433,6 @@
                 </a>
             </div>
     </footer>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
